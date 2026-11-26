@@ -412,21 +412,33 @@
       align-items: center;
     }
 
+    .hero-banner-link {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      display: block;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .hero-banner-link:focus-visible {
+      outline: 4px solid var(--golden-yellow);
+      outline-offset: -6px;
+    }
+
     .hero-slide img {
       position: absolute;
       inset: 0;
       width: 100%;
       height: 100%;
       object-fit: cover;
-      filter: brightness(0.55);
+      object-position: center;
+      filter: none;
+      transition: transform 0.5s ease;
     }
 
-    /* Festive Poster Overlay Gradient */
-    .hero-slide::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(90deg, rgba(72, 40, 13, 0.92) 0%, rgba(139, 37, 37, 0.68) 55%, rgba(72, 40, 13, 0.25) 100%);
+    .hero-banner-link:hover img {
+      transform: scale(1.015);
     }
 
     .hero-content {
@@ -2060,7 +2072,7 @@
        ======================================================================== */
     const BANNERS = [
       {
-        image: "https://github.com/pvpkhome-beep/Healthy_Snacks/blob/main/79f939da-0c3a-4b35-b310-de0ee8c4f89b.png",
+        image: "https://raw.githubusercontent.com/pvpkhome-beep/Healthy_Snacks/main/79f939da-0c3a-4b35-b310-de0ee8c4f89b.png",
         heading: "Authentic Homemade Flavours of Amravati",
         headingMarathi: "अमरावतीची अस्सल घरगुती चव!",
         description: "7+ years of crafting crispy Chakli, Chivda, Papad, Kurvadya & fresh dairy delights with love.",
@@ -2596,22 +2608,21 @@
       const track = document.getElementById("slidesTrack");
       const dotsContainer = document.getElementById("carouselDots");
 
-      track.innerHTML = BANNERS.map((banner, idx) => {
-        const title = currentLang === "mr" && banner.headingMarathi ? banner.headingMarathi : banner.heading;
-        return `
-          <div class="hero-slide" aria-hidden="${idx !== currentSlide}">
-            <img src="${banner.image}" alt="${banner.heading}" onerror="this.src='https://placehold.co/1400x600/8B2525/FFCA3A?text=Healthy+Snacks+Amravati'" />
-            <div class="container">
-              <div class="hero-content">
-                <span class="hero-tagline-pill">✨ ${SETTINGS.tagline}</span>
-                <h2>${title}</h2>
-                <p>${banner.description}</p>
-                ${banner.buttonText ? `<a href="${banner.buttonLink || '#shop'}" class="btn-primary">${banner.buttonText} →</a>` : ""}
-              </div>
-            </div>
-          </div>
-        `;
-      }).join("");
+      track.innerHTML = BANNERS.map((banner, idx) => `
+        <div class="hero-slide" aria-hidden="${idx !== currentSlide}">
+          <a
+            class="hero-banner-link"
+            href="#shop"
+            aria-label="Browse products and view order details"
+          >
+            <img
+              src="${banner.image}"
+              alt="Fresh homemade snacks and sweets"
+              onerror="this.src='https://placehold.co/1400x600/FFF4D6/48280D?text=Healthy+Snacks'"
+            />
+          </a>
+        </div>
+      `).join("");
 
       dotsContainer.innerHTML = BANNERS.map((_, idx) => `
         <button class="carousel-dot ${idx === currentSlide ? "active" : ""}" onclick="goToSlide(${idx})" aria-label="Slide ${idx + 1}"></button>

@@ -1,0 +1,3169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Healthy Snacks | घरची चव, आरोग्याची साथ! — Amravati, Maharashtra</title>
+  <meta name="description" content="Healthy Snacks brings 7+ years of traditional homemade Marathi snacks, papad, kurvadya, farsan, and dairy sweets to Amravati, Maharashtra. घरची चव, आरोग्याची साथ!" />
+  
+  <!-- Google Fonts: Poppins (English), Noto Sans Devanagari (Marathi), Yatra One (Festive Indian Display) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&family=Yatra+One&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       1. BRAND COLOR PALETTE & CSS VARIABLES
+       ========================================================================== */
+    :root {
+      --bright-yellow: #F5C542;
+      --golden-yellow: #FFCA3A;
+      --cream: #FFF4D6;
+      --cream-light: #FFFDF7;
+      --dark-brown: #48280D;
+      --maroon: #8B2525;
+      --maroon-dark: #681818;
+      --white: #FFFFFF;
+      --success-green: #1E7E34;
+      --whatsapp-green: #25D366;
+      --shadow-sm: 0 4px 12px rgba(72, 40, 13, 0.08);
+      --shadow-md: 0 10px 25px rgba(72, 40, 13, 0.14);
+      --shadow-lg: 0 18px 40px rgba(72, 40, 13, 0.22);
+      --radius-sm: 10px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+
+    /* ==========================================================================
+       2. RESET & BASE TYPOGRAPHY
+       ========================================================================== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+
+    body {
+      font-family: 'Poppins', 'Noto Sans Devanagari', sans-serif;
+      background-color: var(--cream);
+      color: var(--dark-brown);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      outline: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .section-padding {
+      padding: 70px 0;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 42px;
+    }
+
+    .section-badge {
+      display: inline-block;
+      background: var(--golden-yellow);
+      color: var(--dark-brown);
+      font-weight: 700;
+      font-size: 0.8rem;
+      padding: 6px 16px;
+      border-radius: 50px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 10px;
+      border: 1.5px solid var(--dark-brown);
+    }
+
+    .section-title {
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      font-weight: 800;
+      color: var(--maroon);
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+
+    .section-subtitle {
+      color: var(--dark-brown);
+      opacity: 0.85;
+      max-width: 650px;
+      margin: 0 auto;
+      font-size: 1rem;
+    }
+
+    /* ==========================================================================
+       3. TOP ANNOUNCEMENT BAR & STICKY NAVBAR
+       ========================================================================== */
+    .top-strip {
+      background: var(--maroon);
+      color: var(--cream);
+      text-align: center;
+      font-size: 0.85rem;
+      font-weight: 500;
+      padding: 8px 15px;
+      letter-spacing: 0.3px;
+    }
+
+    .top-strip span {
+      color: var(--golden-yellow);
+      font-weight: 700;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(10px);
+      border-bottom: 3px solid var(--bright-yellow);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 76px;
+      gap: 15px;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+
+    .logo-icon {
+      width: 46px;
+      height: 46px;
+      background: linear-gradient(135deg, var(--maroon), #B83232);
+      border: 2.5px solid var(--golden-yellow);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--golden-yellow);
+      font-size: 1.5rem;
+      box-shadow: var(--shadow-sm);
+      transform: rotate(-4deg);
+      transition: var(--transition);
+    }
+
+    .brand-logo:hover .logo-icon {
+      transform: rotate(0deg) scale(1.05);
+    }
+
+    .brand-text h1 {
+      font-family: 'Yatra One', 'Poppins', sans-serif;
+      font-size: 1.45rem;
+      color: var(--maroon);
+      line-height: 1.1;
+      letter-spacing: 0.5px;
+    }
+
+    .brand-text p {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--dark-brown);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--dark-brown);
+      position: relative;
+      padding: 6px 0;
+      transition: var(--transition);
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 3px;
+      background: var(--maroon);
+      border-radius: 3px;
+      transition: var(--transition);
+    }
+
+    .nav-links a:hover {
+      color: var(--maroon);
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .icon-btn {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      background: var(--cream);
+      color: var(--dark-brown);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      transition: var(--transition);
+      border: 1.5px solid transparent;
+    }
+
+    .icon-btn:hover {
+      background: var(--golden-yellow);
+      border-color: var(--dark-brown);
+      transform: translateY(-2px);
+    }
+
+    .cart-badge {
+      position: absolute;
+      top: -6px;
+      right: -6px;
+      background: var(--maroon);
+      color: var(--white);
+      font-size: 0.72rem;
+      font-weight: 700;
+      min-width: 20px;
+      height: 20px;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 5px;
+      border: 2px solid var(--white);
+    }
+
+    .lang-toggle {
+      display: flex;
+      background: var(--cream);
+      border: 1.5px solid var(--dark-brown);
+      border-radius: 50px;
+      padding: 3px;
+      overflow: hidden;
+    }
+
+    .lang-btn {
+      padding: 5px 11px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      border-radius: 50px;
+      background: transparent;
+      color: var(--dark-brown);
+      transition: var(--transition);
+    }
+
+    .lang-btn.active {
+      background: var(--maroon);
+      color: var(--white);
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: var(--cream);
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .hamburger span {
+      width: 22px;
+      height: 2.5px;
+      background: var(--dark-brown);
+      border-radius: 2px;
+      transition: var(--transition);
+    }
+
+    /* Expandable Search Drawer under Navbar */
+    .search-drawer {
+      background: var(--cream-light);
+      border-bottom: 2px solid var(--bright-yellow);
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease, padding 0.35s ease;
+    }
+
+    .search-drawer.open {
+      max-height: 120px;
+      padding: 16px 0;
+    }
+
+    .search-box-wrapper {
+      position: relative;
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 14px 48px 14px 46px;
+      border-radius: 50px;
+      border: 2px solid var(--dark-brown);
+      font-size: 1rem;
+      font-family: inherit;
+      background: var(--white);
+      color: var(--dark-brown);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .search-input:focus {
+      outline: none;
+      border-color: var(--maroon);
+      box-shadow: 0 0 0 4px rgba(245, 197, 66, 0.35);
+    }
+
+    .search-icon-inside {
+      position: absolute;
+      left: 16px;
+      color: var(--maroon);
+      pointer-events: none;
+    }
+
+    .clear-search-btn {
+      position: absolute;
+      right: 14px;
+      background: var(--cream);
+      color: var(--maroon);
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      font-weight: 700;
+      display: none;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .clear-search-btn.visible {
+      display: flex;
+    }
+
+    /* ==========================================================================
+       4. HERO PROMOTIONAL BANNER CAROUSEL
+       ========================================================================== */
+    .hero-carousel {
+      position: relative;
+      width: 100%;
+      height: 54vh;
+      min-height: 380px;
+      max-height: 580px;
+      overflow: hidden;
+      background: var(--dark-brown);
+      border-bottom: 5px solid var(--bright-yellow);
+    }
+
+    .slides-track {
+      display: flex;
+      height: 100%;
+      transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    .hero-slide {
+      min-width: 100%;
+      height: 100%;
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-slide img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.55);
+    }
+
+    /* Festive Poster Overlay Gradient */
+    .hero-slide::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(72, 40, 13, 0.92) 0%, rgba(139, 37, 37, 0.68) 55%, rgba(72, 40, 13, 0.25) 100%);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 650px;
+      color: var(--white);
+      padding: 25px;
+      border-left: 6px solid var(--golden-yellow);
+      background: rgba(72, 40, 13, 0.35);
+      backdrop-filter: blur(4px);
+      border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+    }
+
+    .hero-tagline-pill {
+      display: inline-block;
+      background: var(--golden-yellow);
+      color: var(--dark-brown);
+      font-weight: 800;
+      font-size: 0.85rem;
+      padding: 5px 14px;
+      border-radius: 50px;
+      margin-bottom: 12px;
+    }
+
+    .hero-content h2 {
+      font-size: clamp(1.7rem, 3.8vw, 2.9rem);
+      font-weight: 800;
+      line-height: 1.18;
+      margin-bottom: 12px;
+      color: var(--white);
+      text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+
+    .hero-content p {
+      font-size: clamp(0.95rem, 1.5vw, 1.12rem);
+      color: var(--cream);
+      margin-bottom: 22px;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(135deg, var(--bright-yellow), var(--golden-yellow));
+      color: var(--dark-brown);
+      font-weight: 800;
+      padding: 13px 28px;
+      border-radius: 50px;
+      font-size: 0.98rem;
+      box-shadow: 0 6px 20px rgba(245, 197, 66, 0.4);
+      border: 2px solid var(--dark-brown);
+      transition: var(--transition);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px) scale(1.02);
+      background: var(--white);
+    }
+
+    .carousel-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 5;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.9);
+      color: var(--maroon);
+      font-size: 1.3rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow-md);
+      transition: var(--transition);
+    }
+
+    .carousel-arrow:hover {
+      background: var(--golden-yellow);
+      color: var(--dark-brown);
+      transform: translateY(-50%) scale(1.1);
+    }
+
+    .carousel-prev { left: 18px; }
+    .carousel-next { right: 18px; }
+
+    .carousel-dots {
+      position: absolute;
+      bottom: 18px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 5;
+      display: flex;
+      gap: 10px;
+    }
+
+    .carousel-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50px;
+      background: rgba(255, 255, 255, 0.5);
+      transition: var(--transition);
+    }
+
+    .carousel-dot.active {
+      width: 32px;
+      background: var(--golden-yellow);
+    }
+
+    /* ==========================================================================
+       5. PRODUCT CATEGORIES SECTION
+       ========================================================================== */
+    .categories-section {
+      background: var(--cream-light);
+      border-bottom: 2px dashed rgba(72, 40, 13, 0.15);
+    }
+
+    .category-group-tabs {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+
+    .group-filter-btn {
+      padding: 10px 22px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 0.92rem;
+      background: var(--white);
+      color: var(--dark-brown);
+      border: 2px solid var(--dark-brown);
+      transition: var(--transition);
+    }
+
+    .group-filter-btn.active,
+    .group-filter-btn:hover {
+      background: var(--maroon);
+      color: var(--white);
+      border-color: var(--maroon);
+    }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
+      gap: 16px;
+    }
+
+    .category-card {
+      background: var(--white);
+      border-radius: var(--radius-md);
+      padding: 18px 12px;
+      text-align: center;
+      border: 2px solid transparent;
+      box-shadow: var(--shadow-sm);
+      cursor: pointer;
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .category-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--bright-yellow);
+      box-shadow: var(--shadow-md);
+    }
+
+    .category-card.active {
+      background: linear-gradient(145deg, var(--bright-yellow), var(--golden-yellow));
+      border-color: var(--dark-brown);
+      box-shadow: var(--shadow-md);
+    }
+
+    .cat-emoji {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      background: var(--cream);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.7rem;
+      border: 2px solid var(--bright-yellow);
+    }
+
+    .category-card.active .cat-emoji {
+      background: var(--white);
+      border-color: var(--dark-brown);
+    }
+
+    .cat-name-mr {
+      font-weight: 800;
+      font-size: 1.02rem;
+      color: var(--maroon);
+      line-height: 1.2;
+    }
+
+    .cat-name-en {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--dark-brown);
+      opacity: 0.85;
+    }
+
+    /* ==========================================================================
+       6. PRODUCT CARDS & GRIDS (POPULAR, CATALOG, NEW ARRIVALS)
+       ========================================================================== */
+    .filter-status-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      background: var(--white);
+      padding: 14px 22px;
+      border-radius: var(--radius-md);
+      margin-bottom: 28px;
+      border: 2px solid var(--bright-yellow);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .active-filter-label {
+      font-weight: 700;
+      color: var(--dark-brown);
+      font-size: 0.98rem;
+    }
+
+    .active-filter-label span {
+      color: var(--maroon);
+      background: var(--cream);
+      padding: 4px 12px;
+      border-radius: 50px;
+      margin-left: 6px;
+    }
+
+    .reset-filter-btn {
+      background: var(--maroon);
+      color: var(--white);
+      padding: 8px 18px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 0.85rem;
+      transition: var(--transition);
+    }
+
+    .reset-filter-btn:hover {
+      background: var(--dark-brown);
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+      gap: 26px;
+    }
+
+    .product-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      border: 2px solid rgba(72, 40, 13, 0.08);
+      display: flex;
+      flex-direction: column;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .product-card:hover {
+      transform: translateY(-7px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--bright-yellow);
+    }
+
+    .product-img-wrap {
+      position: relative;
+      height: 215px;
+      background: var(--cream);
+      overflow: hidden;
+    }
+
+    .product-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .product-card:hover .product-img-wrap img {
+      transform: scale(1.07);
+    }
+
+    .badge-stack {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      z-index: 2;
+    }
+
+    .discount-badge {
+      background: var(--maroon);
+      color: var(--white);
+      font-weight: 800;
+      font-size: 0.76rem;
+      padding: 4px 11px;
+      border-radius: 50px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    }
+
+    .bestseller-badge {
+      background: var(--golden-yellow);
+      color: var(--dark-brown);
+      font-weight: 800;
+      font-size: 0.74rem;
+      padding: 4px 11px;
+      border-radius: 50px;
+      border: 1px solid var(--dark-brown);
+    }
+
+    .views-pill {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      background: rgba(72, 40, 13, 0.85);
+      color: var(--cream);
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 50px;
+      backdrop-filter: blur(4px);
+    }
+
+    .product-body {
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .product-cat-tag {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--maroon);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+
+    .product-title {
+      font-size: 1.12rem;
+      font-weight: 800;
+      color: var(--dark-brown);
+      line-height: 1.3;
+      margin-bottom: 4px;
+    }
+
+    .product-subname {
+      font-size: 0.86rem;
+      color: #6E4A2A;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    .product-meta-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 10px;
+      font-size: 0.82rem;
+    }
+
+    .weight-tag {
+      background: var(--cream);
+      color: var(--dark-brown);
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 6px;
+      border: 1px solid rgba(72, 40, 13, 0.2);
+    }
+
+    .stock-tag {
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .stock-in { color: var(--success-green); }
+    .stock-out { color: #C0392B; }
+
+    .delivery-info {
+      background: #FFF9E6;
+      border-left: 3px solid var(--bright-yellow);
+      padding: 6px 10px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--dark-brown);
+      border-radius: 0 6px 6px 0;
+      margin-bottom: 14px;
+    }
+
+    .price-row {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      margin-top: auto;
+      margin-bottom: 14px;
+    }
+
+    .selling-price {
+      font-size: 1.38rem;
+      font-weight: 800;
+      color: var(--maroon);
+    }
+
+    .original-price {
+      font-size: 0.92rem;
+      color: #888;
+      text-decoration: line-through;
+      font-weight: 500;
+    }
+
+    .card-actions {
+      display: grid;
+      grid-template-columns: 1fr 1.25fr;
+      gap: 9px;
+    }
+
+    .btn-view {
+      background: var(--cream);
+      color: var(--dark-brown);
+      font-weight: 700;
+      font-size: 0.84rem;
+      padding: 10px 10px;
+      border-radius: 12px;
+      border: 1.5px solid var(--dark-brown);
+      transition: var(--transition);
+    }
+
+    .btn-view:hover {
+      background: var(--dark-brown);
+      color: var(--white);
+    }
+
+    .btn-add-cart {
+      background: var(--maroon);
+      color: var(--white);
+      font-weight: 700;
+      font-size: 0.84rem;
+      padding: 10px 12px;
+      border-radius: 12px;
+      transition: var(--transition);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .btn-add-cart:hover:not(:disabled) {
+      background: var(--golden-yellow);
+      color: var(--dark-brown);
+      box-shadow: 0 4px 12px rgba(245, 197, 66, 0.5);
+    }
+
+    .btn-add-cart:disabled {
+      background: #CCC;
+      color: #666;
+      cursor: not-allowed;
+    }
+
+    .view-all-wrapper {
+      text-align: center;
+      margin-top: 38px;
+    }
+
+    .no-results-box {
+      text-align: center;
+      background: var(--white);
+      padding: 50px 20px;
+      border-radius: var(--radius-lg);
+      border: 2px dashed var(--maroon);
+      grid-column: 1 / -1;
+    }
+
+    /* ==========================================================================
+       7. SPECIAL OFFERS & COMBOS SECTION
+       ========================================================================== */
+    .offers-section {
+      background: linear-gradient(180deg, var(--maroon) 0%, #5A1515 100%);
+      color: var(--white);
+      position: relative;
+    }
+
+    .offers-section .section-title {
+      color: var(--golden-yellow);
+    }
+
+    .offers-section .section-subtitle {
+      color: var(--cream);
+    }
+
+    .offers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+      gap: 28px;
+    }
+
+    .offer-card {
+      background: var(--cream-light);
+      color: var(--dark-brown);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 3px solid var(--golden-yellow);
+      box-shadow: var(--shadow-lg);
+      display: flex;
+      flex-direction: column;
+      transition: var(--transition);
+    }
+
+    .offer-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .offer-img-box {
+      position: relative;
+      height: 200px;
+    }
+
+    .offer-img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .offer-ribbon {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      background: var(--bright-yellow);
+      color: var(--dark-brown);
+      font-weight: 800;
+      font-size: 0.8rem;
+      padding: 6px 14px;
+      border-radius: 50px;
+      border: 2px solid var(--dark-brown);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .offer-content {
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .offer-validity {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--maroon);
+      background: var(--cream);
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 50px;
+      margin-bottom: 10px;
+      align-self: flex-start;
+    }
+
+    .offer-content h3 {
+      font-size: 1.28rem;
+      font-weight: 800;
+      color: var(--dark-brown);
+      margin-bottom: 8px;
+    }
+
+    .offer-content p {
+      font-size: 0.92rem;
+      color: #5C3A1D;
+      margin-bottom: 18px;
+    }
+
+    .offer-footer {
+      margin-top: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding-top: 14px;
+      border-top: 1.5px dashed rgba(72, 40, 13, 0.2);
+    }
+
+    /* ==========================================================================
+       8. ABOUT US & WHY CHOOSE US
+       ========================================================================== */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.15fr;
+      gap: 44px;
+      align-items: center;
+    }
+
+    .about-visual {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 4px solid var(--bright-yellow);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .about-visual img {
+      width: 100%;
+      height: 410px;
+      object-fit: cover;
+    }
+
+    .experience-badge {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background: var(--maroon);
+      color: var(--white);
+      padding: 16px 22px;
+      border-radius: var(--radius-md);
+      border: 2.5px solid var(--golden-yellow);
+      box-shadow: var(--shadow-md);
+    }
+
+    .experience-badge strong {
+      display: block;
+      font-size: 1.8rem;
+      color: var(--golden-yellow);
+      line-height: 1;
+    }
+
+    .about-text h2 {
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+      color: var(--maroon);
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .marathi-quote {
+      font-family: 'Yatra One', 'Noto Sans Devanagari', sans-serif;
+      font-size: 1.45rem;
+      color: var(--dark-brown);
+      background: var(--bright-yellow);
+      display: inline-block;
+      padding: 8px 20px;
+      border-radius: 12px;
+      margin-bottom: 18px;
+      border: 2px solid var(--dark-brown);
+    }
+
+    .about-text p {
+      font-size: 1.05rem;
+      margin-bottom: 16px;
+      color: var(--dark-brown);
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 22px;
+      margin-top: 50px;
+    }
+
+    .why-card {
+      background: var(--white);
+      padding: 28px 22px;
+      border-radius: var(--radius-lg);
+      text-align: center;
+      border-bottom: 5px solid var(--maroon);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+
+    .why-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-md);
+      border-bottom-color: var(--bright-yellow);
+    }
+
+    .why-icon {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 16px;
+      background: var(--cream);
+      border: 2px solid var(--golden-yellow);
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.9rem;
+    }
+
+    .why-card h3 {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--maroon);
+      margin-bottom: 8px;
+    }
+
+    .why-card p {
+      font-size: 0.9rem;
+      color: var(--dark-brown);
+    }
+
+    /* ==========================================================================
+       9. CUSTOMER REVIEWS (SAMPLE PLACEHOLDERS)
+       ========================================================================== */
+    .reviews-section {
+      background: var(--cream-light);
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 24px;
+    }
+
+    .review-card {
+      background: var(--white);
+      padding: 26px;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+      border: 2px solid var(--cream);
+      position: relative;
+    }
+
+    .sample-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      background: var(--cream);
+      color: var(--maroon);
+      padding: 3px 10px;
+      border-radius: 50px;
+      margin-bottom: 10px;
+    }
+
+    .stars {
+      color: #F59E0B;
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+
+    .review-card p {
+      font-style: italic;
+      font-size: 0.94rem;
+      margin-bottom: 16px;
+      color: var(--dark-brown);
+    }
+
+    .reviewer-info strong {
+      display: block;
+      color: var(--maroon);
+      font-size: 0.98rem;
+    }
+
+    .reviewer-info span {
+      font-size: 0.8rem;
+      color: #7A583A;
+    }
+
+    /* ==========================================================================
+       10. CONTACT SECTION & FOOTER
+       ========================================================================== */
+    .contact-card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 22px;
+    }
+
+    .contact-box {
+      background: var(--white);
+      padding: 26px;
+      border-radius: var(--radius-lg);
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+      border: 2px solid var(--bright-yellow);
+      transition: var(--transition);
+    }
+
+    .contact-box:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .contact-icon {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .contact-box h3 {
+      color: var(--maroon);
+      font-size: 1.1rem;
+      margin-bottom: 6px;
+    }
+
+    .contact-box p, .contact-box a {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--dark-brown);
+      word-break: break-word;
+    }
+
+    .contact-box a:hover {
+      color: var(--maroon);
+      text-decoration: underline;
+    }
+
+    .footer {
+      background: var(--dark-brown);
+      color: var(--cream);
+      padding: 60px 0 24px;
+      border-top: 6px solid var(--bright-yellow);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 36px;
+      margin-bottom: 40px;
+    }
+
+    .footer h3 {
+      color: var(--golden-yellow);
+      font-size: 1.15rem;
+      margin-bottom: 16px;
+      font-weight: 700;
+    }
+
+    .footer-brand h2 {
+      font-family: 'Yatra One', sans-serif;
+      color: var(--golden-yellow);
+      font-size: 1.8rem;
+      margin-bottom: 6px;
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-links a {
+      color: var(--cream);
+      font-size: 0.92rem;
+      transition: var(--transition);
+    }
+
+    .footer-links a:hover {
+      color: var(--golden-yellow);
+      padding-left: 5px;
+    }
+
+    .social-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .social-pill {
+      background: rgba(255, 255, 255, 0.12);
+      color: var(--white);
+      padding: 8px 16px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+
+    .social-pill:hover {
+      background: var(--golden-yellow);
+      color: var(--dark-brown);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 244, 214, 0.18);
+      padding-top: 20px;
+      text-align: center;
+      font-size: 0.86rem;
+      color: rgba(255, 244, 214, 0.8);
+    }
+
+    /* ==========================================================================
+       11. SLIDE-OVER SHOPPING CART DRAWER & PRODUCT DETAIL MODAL
+       ========================================================================== */
+    .overlay-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(40, 20, 5, 0.65);
+      backdrop-filter: blur(3px);
+      z-index: 1500;
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition);
+    }
+
+    .overlay-backdrop.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .cart-drawer {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 100%;
+      max-width: 430px;
+      height: 100vh;
+      background: var(--cream-light);
+      z-index: 1600;
+      display: flex;
+      flex-direction: column;
+      box-shadow: -10px 0 30px rgba(0,0,0,0.3);
+      transition: right 0.38s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+
+    .cart-drawer.open {
+      right: 0;
+    }
+
+    .cart-header {
+      background: var(--maroon);
+      color: var(--white);
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 4px solid var(--bright-yellow);
+    }
+
+    .cart-header h3 {
+      font-size: 1.25rem;
+      font-weight: 800;
+    }
+
+    .close-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.2);
+      color: var(--white);
+      font-size: 1.2rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .close-btn:hover {
+      background: var(--golden-yellow);
+      color: var(--dark-brown);
+    }
+
+    .cart-items-body {
+      flex-grow: 1;
+      overflow-y: auto;
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .cart-item {
+      background: var(--white);
+      border-radius: var(--radius-md);
+      padding: 12px;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      box-shadow: var(--shadow-sm);
+      border: 1.5px solid var(--cream);
+    }
+
+    .cart-item img {
+      width: 68px;
+      height: 68px;
+      border-radius: 10px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .cart-item-info {
+      flex-grow: 1;
+    }
+
+    .cart-item-info h4 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--dark-brown);
+      line-height: 1.25;
+    }
+
+    .cart-item-info .item-meta {
+      font-size: 0.8rem;
+      color: #777;
+      margin: 3px 0 8px;
+    }
+
+    .qty-controls {
+      display: inline-flex;
+      align-items: center;
+      background: var(--cream);
+      border-radius: 50px;
+      border: 1px solid var(--dark-brown);
+      overflow: hidden;
+    }
+
+    .qty-btn {
+      width: 28px;
+      height: 26px;
+      background: transparent;
+      font-weight: 800;
+      color: var(--dark-brown);
+    }
+
+    .qty-btn:hover {
+      background: var(--golden-yellow);
+    }
+
+    .qty-val {
+      padding: 0 10px;
+      font-weight: 700;
+      font-size: 0.88rem;
+    }
+
+    .remove-item-btn {
+      background: #FDECEA;
+      color: #C0392B;
+      padding: 6px 9px;
+      border-radius: 8px;
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+
+    .cart-footer {
+      background: var(--white);
+      padding: 20px;
+      border-top: 2px solid var(--bright-yellow);
+    }
+
+    .summary-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+    }
+
+    .summary-row.total {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--maroon);
+      border-top: 1.5px dashed #DDD;
+      padding-top: 10px;
+      margin-bottom: 16px;
+    }
+
+    .btn-whatsapp-order {
+      width: 100%;
+      background: var(--whatsapp-green);
+      color: var(--white);
+      font-weight: 800;
+      font-size: 1rem;
+      padding: 14px;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      box-shadow: 0 6px 18px rgba(37, 211, 102, 0.35);
+      transition: var(--transition);
+    }
+
+    .btn-whatsapp-order:hover {
+      background: #1EBE5D;
+      transform: translateY(-2px);
+    }
+
+    /* Product Quick-View Modal */
+    .product-modal {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -45%) scale(0.95);
+      width: 92%;
+      max-width: 680px;
+      max-height: 90vh;
+      overflow-y: auto;
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      border: 4px solid var(--bright-yellow);
+      z-index: 1700;
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .product-modal.open {
+      opacity: 1;
+      visibility: visible;
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    .modal-body-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 24px;
+      padding: 24px;
+    }
+
+    .modal-body-grid img {
+      width: 100%;
+      height: 270px;
+      object-fit: cover;
+      border-radius: var(--radius-md);
+      border: 2px solid var(--cream);
+    }
+
+    /* Toast Notification */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: var(--dark-brown);
+      color: var(--golden-yellow);
+      padding: 12px 24px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 0.92rem;
+      box-shadow: var(--shadow-lg);
+      border: 2px solid var(--golden-yellow);
+      z-index: 2000;
+      transition: transform 0.35s ease;
+    }
+
+    .toast.show {
+      transform: translateX(-50%) translateY(0);
+    }
+
+    /* ==========================================================================
+       12. RESPONSIVE BREAKPOINTS
+       ========================================================================== */
+    @media (max-width: 992px) {
+      .nav-links {
+        position: fixed;
+        top: 76px;
+        left: 0;
+        width: 100%;
+        background: var(--white);
+        flex-direction: column;
+        padding: 24px;
+        gap: 18px;
+        border-bottom: 4px solid var(--bright-yellow);
+        box-shadow: var(--shadow-md);
+        transform: translateY(-150%);
+        transition: transform 0.35s ease;
+        z-index: 999;
+      }
+
+      .nav-links.mobile-open {
+        transform: translateY(0);
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 680px) {
+      .hero-carousel {
+        height: 440px;
+      }
+
+      .hero-content {
+        margin: 0 12px;
+        padding: 18px;
+      }
+
+      .carousel-arrow {
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
+      }
+
+      .modal-body-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .brand-text h1 {
+        font-size: 1.2rem;
+      }
+
+      .brand-text p {
+        font-size: 0.68rem;
+      }
+
+      .lang-btn {
+        padding: 4px 8px;
+        font-size: 0.72rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Strip -->
+  <div class="top-strip">
+    📍 Amravati, Maharashtra • <span>घरची चव, आरोग्याची साथ!</span> • 7+ Years of Homemade Tradition
+  </div>
+
+  <!-- ========================================================================
+       STICKY NAVIGATION BAR
+       ======================================================================== -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo" aria-label="Healthy Snacks Home">
+        <div class="logo-icon">🥨</div>
+        <div class="brand-text">
+          <h1 id="nav-brand-name">Healthy Snacks</h1>
+          <p id="nav-tagline">घरची चव, आरोग्याची साथ!</p>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" data-i18n="navHome">Home</a></li>
+        <li><a href="#shop" data-i18n="navShop">Shop</a></li>
+        <li><a href="#offers" data-i18n="navOffers">Offers</a></li>
+        <li><a href="#categories" data-i18n="navCategories">Categories</a></li>
+        <li><a href="#about" data-i18n="navAbout">About Us</a></li>
+        <li><a href="#contact" data-i18n="navContact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="searchToggleBtn" aria-label="Search Products" title="Search">
+          🔍
+        </button>
+
+        <button class="icon-btn" id="cartToggleBtn" aria-label="Open Shopping Cart" title="Cart">
+          🛒
+          <span class="cart-badge" id="cartCountBadge">0</span>
+        </button>
+
+        <div class="lang-toggle" role="group" aria-label="Language Selector">
+          <button class="lang-btn active" data-lang="en" id="btnLangEn">English</button>
+          <button class="lang-btn" data-lang="mr" id="btnLangMr">मराठी</button>
+        </div>
+
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Expandable Live Search Bar -->
+    <div class="search-drawer" id="searchDrawer">
+      <div class="container">
+        <div class="search-box-wrapper">
+          <span class="search-icon-inside">🔍</span>
+          <input
+            type="text"
+            id="searchInput"
+            class="search-input"
+            placeholder="Search products in English or मराठी (e.g. Chakli, चिवडा, पापड, Basundi)..."
+            aria-label="Search products"
+          />
+          <button class="clear-search-btn" id="clearSearchBtn" aria-label="Clear Search">✕</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       PROMOTIONAL SLIDING BANNER CAROUSEL
+       ======================================================================== -->
+  <section id="home" class="hero-carousel" aria-label="Promotional Banners">
+    <div class="slides-track" id="slidesTrack">
+      <!-- Populated dynamically from BANNERS array -->
+    </div>
+    <button class="carousel-arrow carousel-prev" id="prevSlideBtn" aria-label="Previous Banner">❮</button>
+    <button class="carousel-arrow carousel-next" id="nextSlideBtn" aria-label="Next Banner">❯</button>
+    <div class="carousel-dots" id="carouselDots"></div>
+  </section>
+
+  <!-- ========================================================================
+       PRODUCT CATEGORIES SECTION
+       ======================================================================== -->
+  <section id="categories" class="section-padding categories-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge" data-i18n="catBadge">Authentic Varieties</span>
+        <h2 class="section-title" data-i18n="catTitle">Explore Our Categories</h2>
+        <p class="section-subtitle" data-i18n="catSubtitle">Click any category below to filter traditional homemade snacks, papad, farsan, and dairy delicacies.</p>
+      </div>
+
+      <!-- Group Tabs -->
+      <div class="category-group-tabs">
+        <button class="group-filter-btn active" data-group="all" data-i18n="grpAll">All Categories</button>
+        <button class="group-filter-btn" data-group="Traditional Products" data-i18n="grpTraditional">Traditional Products</button>
+        <button class="group-filter-btn" data-group="Snacks and Farsan" data-i18n="grpSnacks">Snacks & Farsan</button>
+        <button class="group-filter-btn" data-group="Sweets and Dairy" data-i18n="grpDairy">Sweets & Dairy</button>
+      </div>
+
+      <!-- Category Cards Grid -->
+      <div class="category-grid" id="categoryGrid"></div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       MOST POPULAR PRODUCTS & FILTERED SHOP SECTION
+       ======================================================================== -->
+  <section id="shop" class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge" data-i18n="popBadge">Customer Favourites</span>
+        <h2 class="section-title" id="shopSectionTitle" data-i18n="popTitle">Most Popular Products</h2>
+        <p class="section-subtitle" data-i18n="popSubtitle">Sorted automatically by popularity and customer views. Click "View Product" to inspect details.</p>
+      </div>
+
+      <!-- Active Filter / Search Status Bar -->
+      <div class="filter-status-bar" id="filterStatusBar" style="display: none;">
+        <div class="active-filter-label">
+          <span id="filterLabelPrefix">Showing:</span>
+          <span id="activeFilterName">All Products</span>
+        </div>
+        <button class="reset-filter-btn" id="resetFilterBtn">✕ Show All Products</button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid" id="popularProductsGrid"></div>
+
+      <!-- View All Button -->
+      <div class="view-all-wrapper" id="viewAllWrapper">
+        <button class="btn-primary" id="viewAllBtn" data-i18n="viewAllBtn">View All Products →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SPECIAL OFFERS & COMBOS SECTION
+       ======================================================================== -->
+  <section id="offers" class="section-padding offers-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge" data-i18n="offBadge">Festive & Family Combos</span>
+        <h2 class="section-title" data-i18n="offTitle">Special Offers & Value Packs</h2>
+        <p class="section-subtitle" data-i18n="offSubtitle">Sample promotional combo packs — easily customizable in the OFFERS configuration list.</p>
+      </div>
+
+      <div class="offers-grid" id="offersGrid"></div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       NEW ARRIVALS SECTION (AUTOMATICALLY SORTED BY dateAdded)
+       ======================================================================== -->
+  <section id="new-arrivals" class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge" data-i18n="newBadge">Freshly Added</span>
+        <h2 class="section-title" data-i18n="newTitle">New Arrivals</h2>
+        <p class="section-subtitle" data-i18n="newSubtitle">Our latest homemade batches sorted automatically by date added.</p>
+      </div>
+
+      <div class="products-grid" id="newArrivalsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       ABOUT US & WHY CHOOSE US SECTION
+       ======================================================================== -->
+  <section id="about" class="section-padding" style="background: var(--cream-light);">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual">
+          <img
+            src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?auto=format&fit=crop&w=900&q=80"
+            alt="Traditional Homemade Indian Snacks Preparation"
+            onerror="this.src='https://placehold.co/800x600/F5C542/48280D?text=Healthy+Snacks+Amravati'"
+          />
+          <div class="experience-badge">
+            <strong>7+ Years</strong>
+            <span>Serving Amravati</span>
+          </div>
+        </div>
+
+        <div class="about-text">
+          <span class="section-badge" data-i18n="aboutBadge">Our Story</span>
+          <h2 data-i18n="aboutTitle">About Healthy Snacks</h2>
+          <div class="marathi-quote">“घरची चव, आरोग्याची साथ!”</div>
+          <p data-i18n="aboutPara1">
+            Healthy Snacks brings traditional homemade food flavours to Amravati. With more than 7 years of experience, we aim to serve customers with traditional taste and quality.
+          </p>
+          <p data-i18n="aboutPara2">
+            From crispy Chakli, Chivda, and Shankarpali to traditional sun-dried Shevaya, Sargunde, Kurvadya, Papad, and fresh dairy sweets like Basundi and homemade Pedhe — every batch is crafted with authentic Maharashtrian recipes.
+          </p>
+          <a href="#shop" class="btn-primary" data-i18n="exploreMenuBtn">Explore Our Menu →</a>
+        </div>
+      </div>
+
+      <!-- Why Choose Us Cards -->
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">🏆</div>
+          <h3 data-i18n="why1Title">7+ Years of Experience</h3>
+          <p data-i18n="why1Desc">Over seven years of dedicated culinary experience serving families across Amravati.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🏠</div>
+          <h3 data-i18n="why2Title">Traditional Taste</h3>
+          <p data-i18n="why2Desc">Authentic Maharashtrian recipes delivering true homemade flavour — घरची चव!</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🧺</div>
+          <h3 data-i18n="why3Title">Variety of Homemade Products</h3>
+          <p data-i18n="why3Desc">Wide selection spanning papad, kurvadya, festive farsan, and fresh dairy items.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🤝</div>
+          <h3 data-i18n="why4Title">Customer Trust</h3>
+          <p data-i18n="why4Desc">Loved by local households for consistent taste, careful packing, and personal service.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       CUSTOMER REVIEWS (CLEARLY MARKED SAMPLE PLACEHOLDERS)
+       ======================================================================== -->
+  <section class="section-padding reviews-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge" data-i18n="revBadge">Community Feedback</span>
+        <h2 class="section-title" data-i18n="revTitle">Customer Testimonials</h2>
+        <p class="section-subtitle" data-i18n="revSubtitle">Sample testimonial placeholders below — replace with verified customer feedback in index.html.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <span class="sample-tag">Sample Placeholder Review</span>
+          <div class="stars">★★★★★</div>
+          <p>"[Sample Review] The Chakli and Chivda taste just like homemade festive snacks. Great packaging and quick response on WhatsApp!"</p>
+          <div class="reviewer-info">
+            <strong>Customer Name Placeholder 1</strong>
+            <span>Amravati, Maharashtra</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <span class="sample-tag">Sample Placeholder Review</span>
+          <div class="stars">★★★★★</div>
+          <p>"[Sample Review] Ordered Kurvadya, Batata Papad, and Sargunde for the season. Very clean preparation and authentic traditional flavour."</p>
+          <div class="reviewer-info">
+            <strong>Customer Name Placeholder 2</strong>
+            <span>Amravati, Maharashtra</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <span class="sample-tag">Sample Placeholder Review</span>
+          <div class="stars">★★★★★</div>
+          <p>"[Sample Review] Fresh Basundi and Gharghuti Pedhe were delicious for our family gathering. Truly lives up to घरची चव, आरोग्याची साथ!"</p>
+          <div class="reviewer-info">
+            <strong>Customer Name Placeholder 3</strong>
+            <span>Amravati, Maharashtra</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       CONTACT SECTION
+       ======================================================================== -->
+  <section id="contact" class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge" data-i18n="conBadge">Get In Touch</span>
+        <h2 class="section-title" data-i18n="conTitle">Contact Healthy Snacks</h2>
+        <p class="section-subtitle" data-i18n="conSubtitle">Order directly via WhatsApp or reach out to us in Amravati, Maharashtra.</p>
+      </div>
+
+      <div class="contact-card-grid" id="contactGrid">
+        <!-- Populated from SETTINGS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h2 id="footerBrandName">Healthy Snacks</h2>
+          <p style="color: var(--golden-yellow); font-weight: 700; margin-bottom: 10px;" id="footerTagline">घरची चव, आरोग्याची साथ!</p>
+          <p style="font-size: 0.9rem; opacity: 0.85;">
+            Traditional homemade Marathi snacks, papad, farsan, and dairy sweets crafted with 7+ years of experience in Amravati, Maharashtra.
+          </p>
+          <div class="social-pills" id="footerSocials"></div>
+        </div>
+
+        <div>
+          <h3 data-i18n="footerQuickLinks">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#shop">Most Popular Products</a></li>
+            <li><a href="#offers">Special Offers</a></li>
+            <li><a href="#new-arrivals">New Arrivals</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 data-i18n="footerCats">Popular Categories</h3>
+          <ul class="footer-links">
+            <li><a href="#shop" onclick="filterByCategory('शेवया')">शेवया (Shevaya)</a></li>
+            <li><a href="#shop" onclick="filterByCategory('कुरवड्या')">कुरवड्या (Kurvadya)</a></li>
+            <li><a href="#shop" onclick="filterByCategory('पापड')">पापड (Papad)</a></li>
+            <li><a href="#shop" onclick="filterByCategory('चिवडा')">चिवडा (Chivda)</a></li>
+            <li><a href="#shop" onclick="filterByCategory('चकली')">चकली (Chakli)</a></li>
+            <li><a href="#shop" onclick="filterByCategory('बासुंदी')">बासुंदी (Basundi)</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 data-i18n="footerContact">Contact Info</h3>
+          <ul class="footer-links" id="footerContactList"></ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="currentYear"></span> Healthy Snacks, Amravati, Maharashtra, India. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       SLIDE-OVER SHOPPING CART DRAWER
+       ======================================================================== -->
+  <div class="overlay-backdrop" id="globalBackdrop"></div>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping Cart">
+    <div class="cart-header">
+      <h3>🛒 <span data-i18n="cartTitle">Your Cart</span> (<span id="drawerCartCount">0</span>)</h3>
+      <button class="close-btn" id="closeCartBtn" aria-label="Close Cart">✕</button>
+    </div>
+
+    <div class="cart-items-body" id="cartItemsContainer">
+      <!-- Cart items injected via JS -->
+    </div>
+
+    <div class="cart-footer" id="cartFooter" style="display: none;">
+      <div class="summary-row">
+        <span data-i18n="subtotalLabel">Subtotal:</span>
+        <strong id="cartSubtotal">₹0</strong>
+      </div>
+      <div class="summary-row total">
+        <span data-i18n="totalLabel">Estimated Total:</span>
+        <span id="cartTotal">₹0</span>
+      </div>
+      <button class="btn-whatsapp-order" id="whatsappCheckoutBtn">
+        <span>💬</span>
+        <span data-i18n="whatsappBtn">Order on WhatsApp</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       PRODUCT DETAIL MODAL
+       ======================================================================== -->
+  <div class="product-modal" id="productModal" role="dialog" aria-modal="true" aria-labelledby="modalProductTitle">
+    <div style="display: flex; justify-content: space-between; align-items: center; padding: 16px 22px; background: var(--cream); border-bottom: 2px solid var(--bright-yellow);">
+      <strong style="color: var(--maroon);" id="modalCategoryTag">Category</strong>
+      <button class="close-btn" style="background: var(--maroon);" id="closeModalBtn" aria-label="Close Modal">✕</button>
+    </div>
+    <div class="modal-body-grid" id="modalContent">
+      <!-- Populated dynamically when View Product is clicked -->
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toastMsg">Added to cart!</div>
+
+  <!-- ========================================================================
+       JAVASCRIPT: EDITABLE DATA ARRAYS & APPLICATION LOGIC
+       ======================================================================== -->
+  <script>
+    /* ========================================================================
+       D. SETTINGS (EDIT YOUR BRAND & CONTACT DETAILS HERE)
+       ------------------------------------------------------------------------
+       - Change whatsappNumber: Include country code without '+' (e.g. "919876543210")
+       - Change phoneNumber, address, facebookURL, instagramURL below.
+       ======================================================================== */
+    const SETTINGS = {
+      brandName: "Healthy Snacks",
+      tagline: "घरची चव, आरोग्याची साथ!",
+      whatsappNumber: "919999999999", // <-- REPLACE WITH YOUR REAL WHATSAPP NUMBER (e.g. "919823012345")
+      phoneNumber: "+91 99999 99999 (Placeholder)", // <-- REPLACE WITH YOUR PHONE NUMBER
+      address: "Amravati, Maharashtra, India",
+      facebookURL: "https://facebook.com/your-healthy-snacks-page", // <-- REPLACE WITH FACEBOOK LINK
+      instagramURL: "https://instagram.com/your-healthy-snacks-handle", // <-- REPLACE WITH INSTAGRAM LINK
+      defaultLanguage: "en" // Options: "en" for English, "mr" for Marathi
+    };
+
+    /* ========================================================================
+       B. BANNERS (EDIT OR ADD PROMOTIONAL SLIDES HERE)
+       ------------------------------------------------------------------------
+       - To add a banner: Copy one { ... } block and paste it inside the BANNERS array.
+       - Replace the "image" URL with your own poster/banner image URL.
+       ======================================================================== */
+    const BANNERS = [
+      {
+        image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1400&q=80",
+        heading: "Authentic Homemade Flavours of Amravati",
+        headingMarathi: "अमरावतीची अस्सल घरगुती चव!",
+        description: "7+ years of crafting crispy Chakli, Chivda, Papad, Kurvadya & fresh dairy delights with love.",
+        buttonText: "Shop Popular Snacks",
+        buttonLink: "#shop"
+      },
+      {
+        image: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1400&q=80",
+        heading: "Traditional Summer & Festive Specials",
+        headingMarathi: "पारंपारिक शेवया, कुरवड्या आणि पापड महोत्सव",
+        description: "Sun-dried Shevaya, Sargunde, Batata Papad & Tandul Papad prepared using time-honoured recipes.",
+        buttonText: "Explore Categories",
+        buttonLink: "#categories"
+      },
+      {
+        image: "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=1400&q=80",
+        heading: "Fresh Basundi, Dahi & Gharghuti Pedhe",
+        headingMarathi: "ताजी बासुंदी, दही आणि घरगुती पेढे",
+        description: "Rich, creamy traditional sweets and dairy products made fresh for your family celebrations.",
+        buttonText: "View Special Offers",
+        buttonLink: "#offers"
+      }
+    ];
+
+    /* ========================================================================
+       CATEGORY MASTER LIST (Maps Marathi categories to groups & icons)
+       ======================================================================== */
+    const CATEGORIES = [
+      // Traditional Products
+      { mr: "शेवया", en: "Shevaya", group: "Traditional Products", icon: "🍜" },
+      { mr: "सारगुंडे", en: "Sargunde", group: "Traditional Products", icon: "🌀" },
+      { mr: "पापड्या", en: "Papadya", group: "Traditional Products", icon: "🫓" },
+      { mr: "पापड", en: "Papad", group: "Traditional Products", icon: "🍘" },
+      { mr: "कुरवड्या", en: "Kurvadya", group: "Traditional Products", icon: "🍥" },
+      { mr: "धपाटे", en: "Dhapate", group: "Traditional Products", icon: "🥞" },
+      { mr: "बटाटा पापड", en: "Batata Papad", group: "Traditional Products", icon: "🥔" },
+      { mr: "तांदूळ पापड", en: "Tandul Papad", group: "Traditional Products", icon: "🌾" },
+      // Snacks and Farsan
+      { mr: "चिवडा", en: "Chivda", group: "Snacks and Farsan", icon: "🥣" },
+      { mr: "चकली", en: "Chakli", group: "Snacks and Farsan", icon: "🥨" },
+      { mr: "शंकरपाळी", en: "Shankarpali", group: "Snacks and Farsan", icon: "🔶" },
+      // Sweets and Dairy
+      { mr: "बासुंदी", en: "Basundi", group: "Sweets and Dairy", icon: "🍮" },
+      { mr: "दही", en: "Dahi", group: "Sweets and Dairy", icon: "🥛" },
+      { mr: "घरगुती पेढे", en: "Gharghuti Pedhe", group: "Sweets and Dairy", icon: "🍬" }
+    ];
+
+    /* ========================================================================
+       A. PRODUCTS (EDIT, ADD, OR UPDATE YOUR PRODUCTS HERE)
+       ------------------------------------------------------------------------
+       HOW TO EDIT:
+       1. Add a new product: Copy any { ... } object, give it a unique "id", and paste it.
+       2. Change product image: Replace the "image" URL string with your image URL/path.
+       3. Change price & discount: Update "originalPrice", "price", and "discount" (%).
+       4. Change delivery estimate: Edit "deliveryEstimate" (e.g. "1–2 Days in Amravati").
+       5. Featured/Bestseller: Set "featured: true" or "featured: false".
+       6. New Arrivals order: Uses "dateAdded" ("YYYY-MM-DD") — newest dates appear first!
+       Note: Sample placeholder prices are used below — update with your actual prices.
+       ======================================================================== */
+    const PRODUCTS = [
+      {
+        id: "prod-1",
+        name: "Bhajani Chakli (Sample)",
+        nameMarathi: "भाजणी चकली",
+        category: "चकली",
+        image: "https://images.unsplash.com/photo-1605197161470-5d2a9af0ac7e?auto=format&fit=crop&w=700&q=80",
+        originalPrice: 180,
+        price: 150,
+        discount: 17,
+        weight: "250g",
+        deliveryEstimate: "Estimated 1–2 Days (Amravati)",
+        availability: "In Stock",
+        featured: true,
+        dateAdded: "2026-11-18",
+        views: 145
+      },
+      {
+        id: "prod-2",
+        name: "Poha & Dryfruit Chivda (Sample)",
+        nameMarathi: "पोह्याचा खमंग चिवडा",
+        category: "चिवडा",
+        image: "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=700&q=80",
+        originalPrice: 160,
+        price: 135,
+        discount: 16,
+        weight: "250g",
+        deliveryEstimate: "Estimated 1–2 Days (Amravati)",
+        availability: "In Stock",
+        featured: true,
+        dateAdded: "2026-11-20",
+        views: 132
+      },
+      {
+        id: "prod-3",
+        name: "Handmade Wheat Shevaya (Sample)",
+        nameMarathi: "हाताच्या गव्हाच्या शेवया",
+        category: "शेवया",
+        image: "https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?auto=format&fit=crop&w=700&q=80",
+        originalPrice: 220,
+        price: 190,
+        discount: 14,
+        weight: "500g",
+        deliveryEstimate: "Estimated 2–3 Days (Amravati)",
+        availability: "In Stock",
+        featured: true,
+        dateAdded: "2026-11-10",
+        views: 118
+      },
+      {
+        id: "prod-4",
+        name: "Traditional Kurvadya (Sample)",
+        nameMarathi: "गव्हाच्या कुरवड्या",
+        category: "कुरवड्या",
+        image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=700&q=80",
+        originalPrice: 240,
+        price: 200,
+        discount: 17,
+        weight: "500g",
+        deliveryEstimate: "Estimated 2–3 Days (Amravati)",
+        availability: "In Stock",
+        featured: true,
+        dateAdded: "2026-11-12",
+        views: 110
+      },
+      {
+        id: "prod-5",
+        name: "Crispy Batata Papad (Sample)",
+        nameMarathi: "उपवासाचे बटाटा पापड",
+        category: "बटाटा पापड",
+        image: "https://images.unsplash.com/photo-1626776876729-bab4369a5a5a?auto=format&fit=crop&w=700&q=80",
+        originalPrice: 200,
+        price: 170,
+        discount: 15,
+        weight: "250g",
+        deliveryEstimate: "Estimated 2–3 Days (Amravati)",
+        availability: "In Stock",
+        featured: true,
+        dateAdded: "2026-11-15",
+        views: 98
+      },
+      {
+        id: "prod-6",
+        name: "Kesar Elaichi Basundi (Sample)",
+        nameMarathi: "केशर वेलची बासुंदी",
+        category: "बासुंदी",
+        image: "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=700&q=80",
+        originalPrice: 260,
+        price: 230,
+        discount: 12,
+        weight: "500ml",
+        deliveryEstimate: "Same / Next Day Local Delivery",
+        availability: "In Stock",
+        featured: true,
+        dateAdded: "2026-11-24",
+        views: 94
+      },
+      {
+        id: "prod-7",
+        name: "Gharghuti Malai Pedhe (Sample)",
+        nameMarathi: "घरगुती मलाई पेढे",
+        category: "घरगुती पेढे",
+        image: "https://images.unsplash.com/photo-1589119908995-c6837fa14848?auto=format&fit=crop&w=700&q=80",
+        originalPrice: 240,
+        price: 210,
+        discount: 13,
+        weight: "250g",
+        deliveryEstimate: "Same / Next Day Local Delivery",
+        availability: "In Stock",
+        featured: true,
+        dateAdded: "2026-11-25",
+        views: 89
+      },
+      {
+        id: "prod-8",
+        name: "Sweet Crispy Shankarpali (Sample)",
+        nameMarathi: "गोड खुसखुशीत शंकरपाळी",
+        category: "शंकरपाळी",
+        image: "https://images.unsplash.com/photo-1606491956689-2ea866880c84?auto=format&fit=crop&w=700&q=80",
+        originalPrice: 170,
+        price: 145,
+        discount: 15,
+        weight: "250g",
+        deliveryEstimate: "Estimated 1–2 Days (Amravati)",
+        availability: "In Stock",
+        featured: false,
+        dateAdded: "2026-11-22",
+        views: 81
+      },
+      {
+        id: "prod-9",
+        name: "Traditional Sargunde (Sample)",
+        nameMarathi: "पारंपारिक सारगुंडे",
+        category: "सारगुंडे",
+        image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=700&q=80",
+        originalPrice: 230,
+        price: 195,
+        discount: 15,
+        weight: "500g",
+        deliveryEstimate: "Estimated 2–3 Days (Amravati)",
+        availability: "In Stock",
+        featured: false,
+        dateAdded: "2026-11-08",
+        views: 74
+      },
+      {
+        id: "prod-10",
+        name: "Udid Masala Papad (Sample)",
+        nameMarathi: "उडीद मसाला पापड",
+        category: "पापड",
+        image: "https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7?auto=format&fit=crop&w=700&q=80",
+        originalPrice: 190,
+        price: 165,
+        discount: 13,
+        weight: "500g",
+        deliveryEstimate: "Estimated 1–2 Days (Amravati)",
+        availability: "In Stock",
+        featured: false,
+        dateAdded: "2026-11-14",
+        views: 68
+      },
+      {
+        id: "prod-11",
+        name: "Tandul Papad / Khichiya (Sample)",
+        nameMarathi: "तांदळाचे पापड",
+        category: "तांदूळ पापड",
+        image: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=700&q=80",
+        originalPrice: 180,
+        price: 155,
+        discount: 14,
+        weight: "500g",
+        deliveryEstimate: "Estimated 2–3 Days (Amravati)",
+        availability: "In Stock",
+        featured: false,
+        dateAdded: "2026-11-16",
+        views: 62
+      },
+      {
+        id: "prod-12",
+        name: "Jowar & Bajra Papadya (Sample)",
+        nameMarathi: "ज्वारीच्या पापड्या",
+        category: "पापड्या",
+        image: "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=700&q=80",
+        originalPrice: 175,
+        price: 150,
+        discount: 14,
+        weight: "500g",
+        deliveryEstimate: "Estimated 2–3 Days (Amravati)",
+        availability: "In Stock",
+        featured: false,
+        dateAdded: "2026-11-05",
+        views: 55
+      },
+      {
+        id: "prod-13",
+        name: "Traditional Thalipeeth / Dhapate (Sample)",
+        nameMarathi: "खमंग धपाटे",
+        category: "धपाटे",
+        image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=700&q=80",
+        originalPrice: 150,
+        price: 130,
+        discount: 13,
+        weight: "Pack of 4",
+        deliveryEstimate: "Same / Next Day Local Delivery",
+        availability: "In Stock",
+        featured: false,
+        dateAdded: "2026-11-26",
+        views: 51
+      },
+      {
+        id: "prod-14",
+        name: "Fresh Homemade Thick Dahi (Sample)",
+        nameMarathi: "ताजे घट्ट घरगुती दही",
+        category: "दही",
+        image: "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=700&q=80",
+        originalPrice: 90,
+        price: 80,
+        discount: 11,
+        weight: "500g",
+        deliveryEstimate: "Same / Next Day Local Delivery",
+        availability: "In Stock",
+        featured: false,
+        dateAdded: "2026-11-23",
+        views: 49
+      }
+    ];
+
+    /* ========================================================================
+       C. OFFERS (EDIT OR ADD COMBO OFFERS HERE)
+       ------------------------------------------------------------------------
+       - Sample offer data is provided below. Update titles, prices, and dates.
+       ======================================================================== */
+    const OFFERS = [
+      {
+        id: "offer-1",
+        title: "Family Tea-Time Farsan Combo (Sample Offer)",
+        image: "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=800&q=80",
+        description: "Includes 250g Bhajani Chakli + 250g Poha Chivda + 250g Sweet Shankarpali.",
+        originalPrice: 510,
+        offerPrice: 410,
+        validUntil: "Valid until 31 Dec 2026 (Sample)"
+      },
+      {
+        id: "offer-2",
+        title: "Traditional Valvan / Papad Basket (Sample Offer)",
+        image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80",
+        description: "Includes 500g Kurvadya + 500g Handmade Shevaya + 250g Batata Papad.",
+        originalPrice: 660,
+        offerPrice: 540,
+        validUntil: "Limited Period Sample Offer"
+      },
+      {
+        id: "offer-3",
+        title: "Festive Sweet & Dairy Delight Pack (Sample Offer)",
+        image: "https://images.unsplash.com/photo-1589119908995-c6837fa14848?auto=format&fit=crop&w=800&q=80",
+        description: "Includes 500ml Kesar Basundi + 250g Gharghuti Malai Pedhe.",
+        originalPrice: 500,
+        offerPrice: 425,
+        validUntil: "Weekend Sample Special"
+      }
+    ];
+
+    /* ========================================================================
+       BILINGUAL UI DICTIONARY (ENGLISH / MARATHI)
+       ======================================================================== */
+    const UI_TEXT = {
+      en: {
+        navHome: "Home",
+        navShop: "Shop",
+        navOffers: "Offers",
+        navCategories: "Categories",
+        navAbout: "About Us",
+        navContact: "Contact",
+        catBadge: "Authentic Varieties",
+        catTitle: "Explore Our Categories",
+        catSubtitle: "Click any category below to filter traditional homemade snacks, papad, farsan, and dairy delicacies.",
+        grpAll: "All Categories",
+        grpTraditional: "Traditional Products",
+        grpSnacks: "Snacks & Farsan",
+        grpDairy: "Sweets & Dairy",
+        popBadge: "Customer Favourites",
+        popTitle: "Most Popular Products",
+        popSubtitle: "Sorted automatically by popularity and customer views. Click 'View Product' to inspect details.",
+        viewAllBtn: "View All Products →",
+        showLessBtn: "Show Top 8 Popular",
+        offBadge: "Festive & Family Combos",
+        offTitle: "Special Offers & Value Packs",
+        offSubtitle: "Sample promotional combo packs — easily customizable in the OFFERS configuration list.",
+        newBadge: "Freshly Added",
+        newTitle: "New Arrivals",
+        newSubtitle: "Our latest homemade batches sorted automatically by date added.",
+        aboutBadge: "Our Story",
+        aboutTitle: "About Healthy Snacks",
+        aboutPara1: "Healthy Snacks brings traditional homemade food flavours to Amravati. With more than 7 years of experience, we aim to serve customers with traditional taste and quality.",
+        aboutPara2: "From crispy Chakli, Chivda, and Shankarpali to traditional sun-dried Shevaya, Sargunde, Kurvadya, Papad, and fresh dairy sweets like Basundi and homemade Pedhe — every batch is crafted with authentic Maharashtrian recipes.",
+        exploreMenuBtn: "Explore Our Menu →",
+        why1Title: "7+ Years of Experience",
+        why1Desc: "Over seven years of dedicated culinary experience serving families across Amravati.",
+        why2Title: "Traditional Taste",
+        why2Desc: "Authentic Maharashtrian recipes delivering true homemade flavour — घरची चव!",
+        why3Title: "Variety of Homemade Products",
+        why3Desc: "Wide selection spanning papad, kurvadya, festive farsan, and fresh dairy items.",
+        why4Title: "Customer Trust",
+        why4Desc: "Loved by local households for consistent taste, careful packing, and personal service.",
+        revBadge: "Community Feedback",
+        revTitle: "Customer Testimonials",
+        revSubtitle: "Sample testimonial placeholders below — replace with verified customer feedback in index.html.",
+        conBadge: "Get In Touch",
+        conTitle: "Contact Healthy Snacks",
+        conSubtitle: "Order directly via WhatsApp or reach out to us in Amravati, Maharashtra.",
+        cartTitle: "Your Cart",
+        subtotalLabel: "Subtotal:",
+        totalLabel: "Estimated Total:",
+        whatsappBtn: "Order on WhatsApp",
+        viewProduct: "View Product",
+        addToCart: "Add to Cart",
+        shopNow: "Add Combo"
+      },
+      mr: {
+        navHome: "मुख्यपृष्ठ",
+        navShop: "खरेदी करा",
+        navOffers: "खास ऑफर्स",
+        navCategories: "प्रकार",
+        navAbout: "आमच्याबद्दल",
+        navContact: "संपर्क",
+        catBadge: "पारंपारिक विविधता",
+        catTitle: "आमचे खाद्यपदार्थ प्रकार",
+        catSubtitle: "खालीलपैकी कोणत्याही प्रकारावर क्लिक करून घरगुती पदार्थ, पापड, फरसाण आणि दुग्धजन्य पदार्थ पहा.",
+        grpAll: "सर्व प्रकार",
+        grpTraditional: "पारंपारिक पदार्थ",
+        grpSnacks: "स्नॅक्स आणि फरसाण",
+        grpDairy: "मिठाई आणि दुग्धजन्य",
+        popBadge: "ग्राहकांची पसंती",
+        popTitle: "सर्वाधिक लोकप्रिय पदार्थ",
+        popSubtitle: "ग्राहकांच्या पसंतीनुसार आणि व्ह्यूज नुसार क्रमवारी लावलेले पदार्थ.",
+        viewAllBtn: "सर्व पदार्थ पहा →",
+        showLessBtn: "टॉप ८ लोकप्रिय पदार्थ पहा",
+        offBadge: "सणासुदीचे व फॅमिली कॉम्बो",
+        offTitle: "खास ऑफर्स आणि कॉम्बो पॅक",
+        offSubtitle: "नमुना कॉम्बो ऑफर्स — तुम्ही तुमच्या गरजेनुसार कोडिंगमध्ये बदलू शकता.",
+        newBadge: "नवीन पदार्थ",
+        newTitle: "नवीन आलेले पदार्थ (New Arrivals)",
+        newSubtitle: "नुकतेच तयार केलेले ताजे घरगुती पदार्थ.",
+        aboutBadge: "आमची ओळख",
+        aboutTitle: "हेल्दी स्नॅक्स (Healthy Snacks) बद्दल",
+        aboutPara1: "हेल्दी स्नॅक्स अमरावतीमध्ये पारंपारिक घरगुती पदार्थांची अस्सल चव घेऊन येत आहे. ७+ वर्षांच्या अनुभवासह, आम्ही ग्राहकांना पारंपारिक चव आणि दर्जेदार सेवा देण्यासाठी कटिबद्ध आहोत.",
+        aboutPara2: "खुसखुशीत चकली, चिवडा आणि शंकरपाळी पासून ते पारंपारिक शेवया, सारगुंडे, कुरवड्या, पापड आणि ताजी बासुंदी व घरगुती पेढे — प्रत्येक पदार्थ अस्सल महाराष्ट्रीयन पद्धतीने बनवला जातो.",
+        exploreMenuBtn: "सर्व पदार्थ पहा →",
+        why1Title: "७+ वर्षांचा अनुभव",
+        why1Desc: "अमरावतीमधील कुटुंबांना सेवा देण्याचा सात वर्षांहून अधिक अनुभव.",
+        why2Title: "पारंपारिक चव",
+        why2Desc: "अस्सल महाराष्ट्रीयन पाककृतींमधून मिळणारी खरी घरची चव!",
+        why3Title: "घरगुती पदार्थांची विविधता",
+        why3Desc: "पापड, कुरवड्या, सणासुदीचे फरसाण आणि ताजे दुग्धजन्य पदार्थ एकाच ठिकाणी.",
+        why4Title: "ग्राहकांचा विश्वास",
+        why4Desc: "सातत्यपूर्ण चव आणि आपुलकीच्या सेवेमुळे स्थानिक ग्राहकांची पसंती.",
+        revBadge: "ग्राहकांचे अभिप्राय",
+        revTitle: "ग्राहकांचे अनुभव",
+        revSubtitle: "खाली नमुना अभिप्राय दिले आहेत — तुम्ही खरे अभिप्राय येथे जोडू शकता.",
+        conBadge: "संपर्क साधा",
+        conTitle: "हेल्दी स्नॅक्सशी संपर्क करा",
+        conSubtitle: "थेट व्हॉट्सअ‍ॅपवरून ऑर्डर करा किंवा अमरावतीमध्ये संपर्क साधा.",
+        cartTitle: "तुमची कार्ट",
+        subtotalLabel: "एकूण रक्कम:",
+        totalLabel: "अंदाजे एकूण:",
+        whatsappBtn: "WhatsApp वर ऑर्डर करा",
+        viewProduct: "माहिती पहा",
+        addToCart: "कार्टमध्ये टाका",
+        shopNow: "कॉम्बो घ्या"
+      }
+    };
+
+    /* ========================================================================
+       APPLICATION STATE & LOCALSTORAGE HELPERS
+       ======================================================================== */
+    let currentLang = localStorage.getItem("hs_lang") || SETTINGS.defaultLanguage;
+    let currentSlide = 0;
+    let slideInterval;
+    let selectedCategory = null;
+    let selectedGroup = "all";
+    let searchQuery = "";
+    let showAllPopular = false;
+
+    // Load saved view counts from localStorage
+    const savedViews = JSON.parse(localStorage.getItem("hs_product_views") || "{}");
+    PRODUCTS.forEach(p => {
+      if (typeof savedViews[p.id] === "number") {
+        p.views = savedViews[p.id];
+      }
+    });
+
+    // Load shopping cart from localStorage
+    let cart = JSON.parse(localStorage.getItem("hs_cart") || "[]");
+
+    function saveViewsToStorage() {
+      const viewMap = {};
+      PRODUCTS.forEach(p => { viewMap[p.id] = p.views; });
+      localStorage.setItem("hs_product_views", JSON.stringify(viewMap));
+    }
+
+    function saveCartToStorage() {
+      localStorage.setItem("hs_cart", JSON.stringify(cart));
+    }
+
+    function formatINR(amount) {
+      return "₹" + Number(amount).toLocaleString("en-IN");
+    }
+
+    function showToast(message) {
+      const toast = document.getElementById("toastMsg");
+      toast.textContent = message;
+      toast.classList.add("show");
+      clearTimeout(toast._timer);
+      toast._timer = setTimeout(() => toast.classList.remove("show"), 2600);
+    }
+
+    /* ========================================================================
+       1. INITIALIZE BRAND SETTINGS & CONTACT DETAILS
+       ======================================================================== */
+    function initSettings() {
+      document.getElementById("nav-brand-name").textContent = SETTINGS.brandName;
+      document.getElementById("nav-tagline").textContent = SETTINGS.tagline;
+      document.getElementById("footerBrandName").textContent = SETTINGS.brandName;
+      document.getElementById("footerTagline").textContent = SETTINGS.tagline;
+      document.getElementById("currentYear").textContent = new Date().getFullYear();
+
+      const waLink = `https://wa.me/${SETTINGS.whatsappNumber}?text=${encodeURIComponent("नमस्कार Healthy Snacks! मला ऑर्डरबद्दल माहिती हवी आहे.")}`;
+
+      // Contact Grid
+      document.getElementById("contactGrid").innerHTML = `
+        <div class="contact-box">
+          <div class="contact-icon">💬</div>
+          <h3>WhatsApp Order & Chat</h3>
+          <a href="${waLink}" target="_blank" rel="noopener">Chat on WhatsApp (+${SETTINGS.whatsappNumber})</a>
+        </div>
+        <div class="contact-box">
+          <div class="contact-icon">📞</div>
+          <h3>Phone Number</h3>
+          <p>${SETTINGS.phoneNumber}</p>
+        </div>
+        <div class="contact-box">
+          <div class="contact-icon">📍</div>
+          <h3>Location</h3>
+          <p>${SETTINGS.address}</p>
+        </div>
+        <div class="contact-box">
+          <div class="contact-icon">📱</div>
+          <h3>Social Media</h3>
+          <p>
+            <a href="${SETTINGS.facebookURL}" target="_blank" rel="noopener">Facebook</a> •
+            <a href="${SETTINGS.instagramURL}" target="_blank" rel="noopener">Instagram</a>
+          </p>
+        </div>
+      `;
+
+      // Footer Contact & Socials
+      document.getElementById("footerContactList").innerHTML = `
+        <li>📍 ${SETTINGS.address}</li>
+        <li>📞 ${SETTINGS.phoneNumber}</li>
+        <li>💬 <a href="${waLink}" target="_blank" rel="noopener">WhatsApp Us</a></li>
+      `;
+
+      document.getElementById("footerSocials").innerHTML = `
+        <a href="${waLink}" target="_blank" rel="noopener" class="social-pill">WhatsApp</a>
+        <a href="${SETTINGS.facebookURL}" target="_blank" rel="noopener" class="social-pill">Facebook</a>
+        <a href="${SETTINGS.instagramURL}" target="_blank" rel="noopener" class="social-pill">Instagram</a>
+      `;
+    }
+
+    /* ========================================================================
+       2. RENDER SLIDING PROMOTIONAL BANNERS
+       ======================================================================== */
+    function renderBanners() {
+      const track = document.getElementById("slidesTrack");
+      const dotsContainer = document.getElementById("carouselDots");
+
+      track.innerHTML = BANNERS.map((banner, idx) => {
+        const title = currentLang === "mr" && banner.headingMarathi ? banner.headingMarathi : banner.heading;
+        return `
+          <div class="hero-slide" aria-hidden="${idx !== currentSlide}">
+            <img src="${banner.image}" alt="${banner.heading}" onerror="this.src='https://placehold.co/1400x600/8B2525/FFCA3A?text=Healthy+Snacks+Amravati'" />
+            <div class="container">
+              <div class="hero-content">
+                <span class="hero-tagline-pill">✨ ${SETTINGS.tagline}</span>
+                <h2>${title}</h2>
+                <p>${banner.description}</p>
+                ${banner.buttonText ? `<a href="${banner.buttonLink || '#shop'}" class="btn-primary">${banner.buttonText} →</a>` : ""}
+              </div>
+            </div>
+          </div>
+        `;
+      }).join("");
+
+      dotsContainer.innerHTML = BANNERS.map((_, idx) => `
+        <button class="carousel-dot ${idx === currentSlide ? "active" : ""}" onclick="goToSlide(${idx})" aria-label="Slide ${idx + 1}"></button>
+      `).join("");
+
+      updateSlidePosition();
+    }
+
+    function updateSlidePosition() {
+      const track = document.getElementById("slidesTrack");
+      track.style.transform = `translateX(-${currentSlide * 100}%)`;
+      document.querySelectorAll(".carousel-dot").forEach((dot, idx) => {
+        dot.classList.toggle("active", idx === currentSlide);
+      });
+    }
+
+    function goToSlide(index) {
+      currentSlide = (index + BANNERS.length) % BANNERS.length;
+      updateSlidePosition();
+      restartCarouselAutoplay();
+    }
+
+    function restartCarouselAutoplay() {
+      clearInterval(slideInterval);
+      slideInterval = setInterval(() => {
+        currentSlide = (currentSlide + 1) % BANNERS.length;
+        updateSlidePosition();
+      }, 5000);
+    }
+
+    /* ========================================================================
+       3. RENDER CATEGORIES & FILTERING
+       ======================================================================== */
+    function renderCategories() {
+      const grid = document.getElementById("categoryGrid");
+      const filteredCats = selectedGroup === "all"
+        ? CATEGORIES
+        : CATEGORIES.filter(c => c.group === selectedGroup);
+
+      grid.innerHTML = filteredCats.map(cat => `
+        <div
+          class="category-card ${selectedCategory === cat.mr ? "active" : ""}"
+          onclick="filterByCategory('${cat.mr}')"
+          role="button"
+          tabindex="0"
+          aria-pressed="${selectedCategory === cat.mr}"
+        >
+          <div class="cat-emoji">${cat.icon}</div>
+          <div class="cat-name-mr">${cat.mr}</div>
+          <div class="cat-name-en">${cat.en}</div>
+        </div>
+      `).join("");
+    }
+
+    function filterByCategory(catMarathi) {
+      if (selectedCategory === catMarathi) {
+        selectedCategory = null; // toggle off
+      } else {
+        selectedCategory = catMarathi;
+      }
+      renderCategories();
+      renderPopularProducts();
+      document.getElementById("shop").scrollIntoView({ behavior: "smooth" });
+    }
+
+    /* ========================================================================
+       4. PRODUCT CARD GENERATOR
+       ======================================================================== */
+    function createProductCardHTML(product) {
+      const t = UI_TEXT[currentLang];
+      const primaryName = currentLang === "mr" ? product.nameMarathi : product.name;
+      const secondaryName = currentLang === "mr" ? product.name : product.nameMarathi;
+      const isInStock = product.availability.toLowerCase() === "in stock";
+
+      return `
+        <article class="product-card">
+          <div class="product-img-wrap">
+            <img
+              src="${product.image}"
+              alt="${product.name} - ${product.nameMarathi}"
+              loading="lazy"
+              onerror="this.src='https://placehold.co/600x450/FFF4D6/48280D?text=${encodeURIComponent(product.nameMarathi)}'"
+            />
+            <div class="badge-stack">
+              ${product.discount > 0 ? `<span class="discount-badge">${product.discount}% OFF</span>` : ""}
+              ${product.featured ? `<span class="bestseller-badge">⭐ Bestseller</span>` : ""}
+            </div>
+            <span class="views-pill">👁 ${product.views} views</span>
+          </div>
+
+          <div class="product-body">
+            <div class="product-cat-tag">${product.category}</div>
+            <h3 class="product-title">${primaryName}</h3>
+            <div class="product-subname">${secondaryName}</div>
+
+            <div class="product-meta-row">
+              <span class="weight-tag">⚖️ ${product.weight}</span>
+              <span class="stock-tag ${isInStock ? "stock-in" : "stock-out"}">
+                ${isInStock ? "● " + product.availability : "● Out of Stock"}
+              </span>
+            </div>
+
+            <div class="delivery-info">🚚 ${product.deliveryEstimate}</div>
+
+            <div class="price-row">
+              <span class="selling-price">${formatINR(product.price)}</span>
+              ${product.originalPrice > product.price ? `<span class="original-price">${formatINR(product.originalPrice)}</span>` : ""}
+            </div>
+
+            <div class="card-actions">
+              <button class="btn-view" onclick="openProductModal('${product.id}')">${t.viewProduct}</button>
+              <button class="btn-add-cart" onclick="addToCart('${product.id}')" ${!isInStock ? "disabled" : ""}>
+                🛒 ${t.addToCart}
+              </button>
+            </div>
+          </div>
+        </article>
+      `;
+    }
+
+    /* ========================================================================
+       5. RENDER MOST POPULAR PRODUCTS (SORTED BY VIEWS + SEARCH/CATEGORY FILTER)
+       ======================================================================== */
+    function renderPopularProducts() {
+      const grid = document.getElementById("popularProductsGrid");
+      const statusBar = document.getElementById("filterStatusBar");
+      const activeFilterName = document.getElementById("activeFilterName");
+      const viewAllWrapper = document.getElementById("viewAllWrapper");
+      const viewAllBtn = document.getElementById("viewAllBtn");
+      const t = UI_TEXT[currentLang];
+
+      // Sort by most views first (tie-breaker: featured flag)
+      let list = [...PRODUCTS].sort((a, b) => {
+        if (b.views !== a.views) return b.views - a.views;
+        return (b.featured ? 1 : 0) - (a.featured ? 1 : 0);
+      });
+
+      const isFiltering = Boolean(selectedCategory || searchQuery.trim());
+
+      if (selectedCategory) {
+        list = list.filter(p => p.category === selectedCategory);
+      }
+
+      if (searchQuery.trim()) {
+        const q = searchQuery.trim().toLowerCase();
+        list = list.filter(p =>
+          p.name.toLowerCase().includes(q) ||
+          p.nameMarathi.toLowerCase().includes(q) ||
+          p.category.toLowerCase().includes(q)
+        );
+      }
+
+      // Show/Hide active filter bar
+      if (isFiltering) {
+        statusBar.style.display = "flex";
+        const parts = [];
+        if (selectedCategory) parts.push(`Category: ${selectedCategory}`);
+        if (searchQuery.trim()) parts.push(`Search: "${searchQuery.trim()}"`);
+        activeFilterName.textContent = `${parts.join(" | ")} (${list.length} items)`;
+        viewAllWrapper.style.display = "none";
+      } else {
+        statusBar.style.display = "none";
+        viewAllWrapper.style.display = PRODUCTS.length > 8 ? "block" : "none";
+        viewAllBtn.textContent = showAllPopular ? t.showLessBtn : t.viewAllBtn;
+        if (!showAllPopular) {
+          list = list.slice(0, 8);
+        }
+      }
+
+      if (list.length === 0) {
+        grid.innerHTML = `
+          <div class="no-results-box">
+            <div style="font-size: 2.5rem; margin-bottom: 10px;">🔍</div>
+            <h3 style="color: var(--maroon); margin-bottom: 8px;">No matching products found</h3>
+            <p style="margin-bottom: 18px;">Try searching with another English or मराठी keyword (e.g., Chakli, चिवडा, पापड, शेवया).</p>
+            <button class="btn-primary" onclick="resetAllFilters()">Reset Search & Filters</button>
+          </div>
+        `;
+        return;
+      }
+
+      grid.innerHTML = list.map(createProductCardHTML).join("");
+    }
+
+    function resetAllFilters() {
+      selectedCategory = null;
+      searchQuery = "";
+      document.getElementById("searchInput").value = "";
+      document.getElementById("clearSearchBtn").classList.remove("visible");
+      renderCategories();
+      renderPopularProducts();
+    }
+
+    /* ========================================================================
+       6. RENDER NEW ARRIVALS (SORTED BY dateAdded DESCENDING)
+       ======================================================================== */
+    function renderNewArrivals() {
+      const grid = document.getElementById("newArrivalsGrid");
+      const sortedByDate = [...PRODUCTS]
+        .sort((a, b) => new Date(b.dateAdded) - new Date(a.dateAdded))
+        .slice(0, 4);
+
+      grid.innerHTML = sortedByDate.map(createProductCardHTML).join("");
+    }
+
+    /* ========================================================================
+       7. RENDER SPECIAL OFFERS
+       ======================================================================== */
+    function renderOffers() {
+      const grid = document.getElementById("offersGrid");
+      const t = UI_TEXT[currentLang];
+
+      grid.innerHTML = OFFERS.map(offer => {
+        const savePct = Math.round(((offer.originalPrice - offer.offerPrice) / offer.originalPrice) * 100);
+        return `
+          <div class="offer-card">
+            <div class="offer-img-box">
+              <img
+                src="${offer.image}"
+                alt="${offer.title}"
+                loading="lazy"
+                onerror="this.src='https://placehold.co/800x450/F5C542/48280D?text=Special+Combo+Offer'"
+              />
+              <span class="offer-ribbon">SAVE ${savePct}%</span>
+            </div>
+            <div class="offer-content">
+              <span class="offer-validity">⏳ ${offer.validUntil}</span>
+              <h3>${offer.title}</h3>
+              <p>${offer.description}</p>
+              <div class="offer-footer">
+                <div>
+                  <span class="selling-price">${formatINR(offer.offerPrice)}</span>
+                  <span class="original-price" style="margin-left: 6px;">${formatINR(offer.originalPrice)}</span>
+                </div>
+                <button class="btn-primary" style="padding: 10px 18px; font-size: 0.85rem;" onclick="addOfferToCart('${offer.id}')">
+                  🛒 ${t.shopNow}
+                </button>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join("");
+    }
+
+    /* ========================================================================
+       8. VIEW PRODUCT MODAL & CLICK/VIEW TRACKING
+       ======================================================================== */
+    function openProductModal(productId) {
+      const product = PRODUCTS.find(p => p.id === productId);
+      if (!product) return;
+
+      // Increment view count & save in localStorage
+      product.views += 1;
+      saveViewsToStorage();
+      renderPopularProducts();
+      renderNewArrivals();
+
+      const t = UI_TEXT[currentLang];
+      const isInStock = product.availability.toLowerCase() === "in stock";
+
+      document.getElementById("modalCategoryTag").textContent = `${product.category} • 👁 ${product.views} Views`;
+      document.getElementById("modalContent").innerHTML = `
+        <img
+          src="${product.image}"
+          alt="${product.name}"
+          onerror="this.src='https://placehold.co/600x450/FFF4D6/48280D?text=${encodeURIComponent(product.nameMarathi)}'"
+        />
+        <div style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <h3 id="modalProductTitle" style="font-size: 1.4rem; color: var(--maroon); font-weight: 800;">${product.nameMarathi}</h3>
+            <p style="font-weight: 600; color: var(--dark-brown); margin-bottom: 12px;">${product.name}</p>
+            <p style="font-size: 0.9rem; margin-bottom: 8px;"><strong>Weight / Pack:</strong> ${product.weight}</p>
+            <p style="font-size: 0.9rem; margin-bottom: 8px;"><strong>Availability:</strong> <span class="${isInStock ? "stock-in" : "stock-out"}">${product.availability}</span></p>
+            <p style="font-size: 0.9rem; margin-bottom: 14px;"><strong>Delivery:</strong> ${product.deliveryEstimate}</p>
+            <div class="price-row">
+              <span class="selling-price" style="font-size: 1.65rem;">${formatINR(product.price)}</span>
+              ${product.originalPrice > product.price ? `<span class="original-price">${formatINR(product.originalPrice)}</span>` : ""}
+              ${product.discount > 0 ? `<span class="discount-badge">${product.discount}% OFF</span>` : ""}
+            </div>
+          </div>
+          <button
+            class="btn-add-cart"
+            style="width: 100%; padding: 14px; font-size: 1rem;"
+            onclick="addToCart('${product.id}'); closeAllOverlays();"
+            ${!isInStock ? "disabled" : ""}
+          >
+            🛒 ${t.addToCart}
+          </button>
+        </div>
+      `;
+
+      document.getElementById("globalBackdrop").classList.add("active");
+      document.getElementById("productModal").classList.add("open");
+    }
+
+    /* ========================================================================
+       9. SHOPPING CART & WHATSAPP ORDER GENERATOR
+       ======================================================================== */
+    function addToCart(productId) {
+      const product = PRODUCTS.find(p => p.id === productId);
+      if (!product) return;
+
+      const existing = cart.find(item => item.id === product.id);
+      if (existing) {
+        existing.qty += 1;
+      } else {
+        cart.push({
+          id: product.id,
+          name: `${product.nameMarathi} (${product.name})`,
+          weight: product.weight,
+          price: product.price,
+          image: product.image,
+          qty: 1
+        });
+      }
+
+      saveCartToStorage();
+      renderCart();
+      showToast(`Added "${product.nameMarathi}" to cart!`);
+    }
+
+    function addOfferToCart(offerId) {
+      const offer = OFFERS.find(o => o.id === offerId);
+      if (!offer) return;
+
+      const existing = cart.find(item => item.id === offer.id);
+      if (existing) {
+        existing.qty += 1;
+      } else {
+        cart.push({
+          id: offer.id,
+          name: offer.title,
+          weight: "Combo Pack",
+          price: offer.offerPrice,
+          image: offer.image,
+          qty: 1
+        });
+      }
+
+      saveCartToStorage();
+      renderCart();
+      openCartDrawer();
+      showToast(`Added combo offer to cart!`);
+    }
+
+    function updateCartQty(itemId, delta) {
+      const item = cart.find(i => i.id === itemId);
+      if (!item) return;
+
+      item.qty += delta;
+      if (item.qty <= 0) {
+        cart = cart.filter(i => i.id !== itemId);
+      }
+      saveCartToStorage();
+      renderCart();
+    }
+
+    function removeFromCart(itemId) {
+      cart = cart.filter(i => i.id !== itemId);
+      saveCartToStorage();
+      renderCart();
+    }
+
+    function renderCart() {
+      const container = document.getElementById("cartItemsContainer");
+      const footer = document.getElementById("cartFooter");
+      const totalQty = cart.reduce((sum, item) => sum + item.qty, 0);
+      const subtotal = cart.reduce((sum, item) => sum + item.price * item.qty, 0);
+
+      document.getElementById("cartCountBadge").textContent = totalQty;
+      document.getElementById("drawerCartCount").textContent = totalQty;
+
+      if (cart.length === 0) {
+        footer.style.display = "none";
+        container.innerHTML = `
+          <div style="text-align: center; padding: 60px 20px;">
+            <div style="font-size: 3.2rem; margin-bottom: 12px;">🧺</div>
+            <h4 style="color: var(--maroon); margin-bottom: 6px;">Your cart is empty</h4>
+            <p style="font-size: 0.9rem; margin-bottom: 20px;">Add delicious homemade snacks, papad, or sweets to begin your WhatsApp order.</p>
+            <button class="btn-primary" onclick="closeAllOverlays()">Browse Products</button>
+          </div>
+        `;
+        return;
+      }
+
+      footer.style.display = "block";
+      document.getElementById("cartSubtotal").textContent = formatINR(subtotal);
+      document.getElementById("cartTotal").textContent = formatINR(subtotal);
+
+      container.innerHTML = cart.map(item => `
+        <div class="cart-item">
+          <img src="${item.image}" alt="${item.name}" onerror="this.src='https://placehold.co/120x120/FFF4D6/48280D?text=Item'" />
+          <div class="cart-item-info">
+            <h4>${item.name}</h4>
+            <div class="item-meta">${item.weight} • ${formatINR(item.price)} each</div>
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+              <div class="qty-controls">
+                <button class="qty-btn" onclick="updateCartQty('${item.id}', -1)" aria-label="Decrease quantity">−</button>
+                <span class="qty-val">${item.qty}</span>
+                <button class="qty-btn" onclick="updateCartQty('${item.id}', 1)" aria-label="Increase quantity">+</button>
+              </div>
+              <strong style="color: var(--maroon);">${formatINR(item.price * item.qty)}</strong>
+            </div>
+          </div>
+          <button class="remove-item-btn" onclick="removeFromCart('${item.id}')" aria-label="Remove item">🗑</button>
+        </div>
+      `).join("");
+    }
+
+    function sendWhatsAppOrder() {
+      if (cart.length === 0) return;
+
+      let subtotal = 0;
+      const lines = [
+        `नमस्कार *${SETTINGS.brandName}*! मला खालील पदार्थांची ऑर्डर द्यायची आहे:`,
+        `--------------------------------`
+      ];
+
+      cart.forEach((item, index) => {
+        const lineTotal = item.price * item.qty;
+        subtotal += lineTotal;
+        lines.push(`${index + 1}. *${item.name}* (${item.weight})`);
+        lines.push(`   Qty: ${item.qty} × ${formatINR(item.price)} = *${formatINR(lineTotal)}*`);
+      });
+
+      lines.push(`--------------------------------`);
+      lines.push(`*Estimated Total: ${formatINR(subtotal)}*`);
+      lines.push(`📍 Location: Amravati`);
+      lines.push(`कृपया उपलब्धता आणि डिलिव्हरीची माहिती कळवावी.`);
+
+      const message = encodeURIComponent(lines.join("\n"));
+      const url = `https://wa.me/${SETTINGS.whatsappNumber}?text=${message}`;
+      window.open(url, "_blank", "noopener");
+    }
+
+    /* ========================================================================
+       10. LANGUAGE SWITCHING & UI OVERLAY CONTROLS
+       ======================================================================== */
+    function applyLanguage(lang) {
+      currentLang = lang;
+      localStorage.setItem("hs_lang", lang);
+
+      document.getElementById("btnLangEn").classList.toggle("active", lang === "en");
+      document.getElementById("btnLangMr").classList.toggle("active", lang === "mr");
+
+      const dict = UI_TEXT[lang];
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        if (dict[key]) el.textContent = dict[key];
+      });
+
+      renderBanners();
+      renderPopularProducts();
+      renderNewArrivals();
+      renderOffers();
+    }
+
+    function openCartDrawer() {
+      document.getElementById("globalBackdrop").classList.add("active");
+      document.getElementById("cartDrawer").classList.add("open");
+    }
+
+    function closeAllOverlays() {
+      document.getElementById("globalBackdrop").classList.remove("active");
+      document.getElementById("cartDrawer").classList.remove("open");
+      document.getElementById("productModal").classList.remove("open");
+    }
+
+    /* ========================================================================
+       11. EVENT LISTENERS & BOOTSTRAP
+       ======================================================================== */
+    document.addEventListener("DOMContentLoaded", () => {
+      initSettings();
+      renderBanners();
+      restartCarouselAutoplay();
+      renderCategories();
+      renderPopularProducts();
+      renderNewArrivals();
+      renderOffers();
+      renderCart();
+      applyLanguage(currentLang);
+
+      // Carousel controls
+      document.getElementById("prevSlideBtn").addEventListener("click", () => goToSlide(currentSlide - 1));
+      document.getElementById("nextSlideBtn").addEventListener("click", () => goToSlide(currentSlide + 1));
+
+      // Search drawer toggle & live search
+      const searchDrawer = document.getElementById("searchDrawer");
+      const searchInput = document.getElementById("searchInput");
+      const clearSearchBtn = document.getElementById("clearSearchBtn");
+
+      document.getElementById("searchToggleBtn").addEventListener("click", () => {
+        searchDrawer.classList.toggle("open");
+        if (searchDrawer.classList.contains("open")) {
+          searchInput.focus();
+        }
+      });
+
+      searchInput.addEventListener("input", (e) => {
+        searchQuery = e.target.value;
+        clearSearchBtn.classList.toggle("visible", searchQuery.length > 0);
+        renderPopularProducts();
+        if (searchQuery.trim().length > 0) {
+          document.getElementById("shop").scrollIntoView({ behavior: "smooth", block: "nearest" });
+        }
+      });
+
+      clearSearchBtn.addEventListener("click", () => {
+        searchQuery = "";
+        searchInput.value = "";
+        clearSearchBtn.classList.remove("visible");
+        renderPopularProducts();
+        searchInput.focus();
+      });
+
+      // Category Group Tabs
+      document.querySelectorAll(".group-filter-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          document.querySelectorAll(".group-filter-btn").forEach(b => b.classList.remove("active"));
+          btn.classList.add("active");
+          selectedGroup = btn.getAttribute("data-group");
+          renderCategories();
+        });
+      });
+
+      // Reset Filter & View All Buttons
+      document.getElementById("resetFilterBtn").addEventListener("click", resetAllFilters);
+      document.getElementById("viewAllBtn").addEventListener("click", () => {
+        showAllPopular = !showAllPopular;
+        renderPopularProducts();
+      });
+
+      // Cart & Modal Controls
+      document.getElementById("cartToggleBtn").addEventListener("click", openCartDrawer);
+      document.getElementById("closeCartBtn").addEventListener("click", closeAllOverlays);
+      document.getElementById("closeModalBtn").addEventListener("click", closeAllOverlays);
+      document.getElementById("globalBackdrop").addEventListener("click", closeAllOverlays);
+      document.getElementById("whatsappCheckoutBtn").addEventListener("click", sendWhatsAppOrder);
+
+      // Mobile Hamburger Menu
+      const navLinks = document.getElementById("navLinks");
+      document.getElementById("hamburgerBtn").addEventListener("click", () => {
+        navLinks.classList.toggle("mobile-open");
+      });
+      navLinks.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", () => navLinks.classList.remove("mobile-open"));
+      });
+
+      // Language Switcher
+      document.getElementById("btnLangEn").addEventListener("click", () => applyLanguage("en"));
+      document.getElementById("btnLangMr").addEventListener("click", () => applyLanguage("mr"));
+    });
+  </script>
+</body>
+</html>
